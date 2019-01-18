@@ -1,0 +1,27 @@
+18/1/2019
+
+Hola Daniel.
+
+Hay un problema en los archivos csv: no puedes reportar dsiSQ_E1, dsiSQ_E3, y dsiE1_E3 en un mismo archivo sin correr el riesgo de perder información. 
+
+Supón un ejemplo simple de un estado que tenía tres distritos en SQ (llámalos 1, 2, y 3) y pierde uno, de modo que E1 y E3 tienen sólo dos distritos (llámalos el A y el B). 51% del distrito 2 pasó al A, 49% al B.
+
+Si reportaras dsiSQ_E1, dsiSQ_E3, y dsiE1_E3 en el mismo archivo 
+
+El archivo de SQ se vería así:
+disloc, hijo, dsi 
+1, A, .67
+2, A, .33
+3, B, .67
+
+El archivo de E3 se vería así:
+disloc, padre, dsi 
+A, 1, .75
+B, 3, .75
+
+Este último tiene sólo 2 observaciones, si intentaras reportar el dsi de SQ no habría dónde poner el distrito 2.
+
+¿Me doy a entender?
+
+---------------------
+
