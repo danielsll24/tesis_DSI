@@ -1,0 +1,8 @@
+"","    edon.x","     esc1","     esc3","dsi_E1_E3_sec","    edon.y","   dis_new","   dis_old","    esc1.y","dsi_E1_E3_pob","  pob_total","     dif"
+"","Min.   : 1.00  ","Min.   : 1.00  ","Min.   : 1.00  ","Min.   :0.1720  ","Min.   : 1.00  ","Min.   : 1.00  ","Min.   : 1.00  ","Min.   : 1.00  ","Min.   :0.0000  ","Min.   :  111  ","Min.   :0.00000  "
+"","1st Qu.: 9.25  ","1st Qu.: 5.00  ","1st Qu.: 5.00  ","1st Qu.:0.4467  ","1st Qu.: 9.00  ","1st Qu.: 5.00  ","1st Qu.: 5.75  ","1st Qu.: 5.00  ","1st Qu.:0.4693  ","1st Qu.: 1192  ","1st Qu.:0.00000  "
+"","Median :16.00  ","Median :10.50  ","Median :11.00  ","Median :0.7595  ","Median :16.00  ","Median :10.00  ","Median :11.00  ","Median :11.00  ","Median :0.8659  ","Median : 1952  ","Median :0.01776  "
+"","Mean   :16.75  ","Mean   :11.44  ","Mean   :11.38  ","Mean   :0.7216  ","Mean   :16.58  ","Mean   :11.37  ","Mean   :12.06  ","Mean   :11.79  ","Mean   :0.7387  ","Mean   : 3012  ","Mean   :0.04383  "
+"","3rd Qu.:24.00  ","3rd Qu.:16.00  ","3rd Qu.:16.00  ","3rd Qu.:1.0000  ","3rd Qu.:24.00  ","3rd Qu.:16.00  ","3rd Qu.:17.00  ","3rd Qu.:16.00  ","3rd Qu.:1.0000  ","3rd Qu.: 3332  ","3rd Qu.:0.05939  "
+"","Max.   :32.00  ","Max.   :44.00  ","Max.   :43.00  ","Max.   :1.0000  ","Max.   :32.00  ","Max.   :45.00  ","Max.   :45.00  ","Max.   :45.00  ","Max.   :1.0000  ","Max.   :23216  ","Max.   :0.71885  "
+"","NA's   :141  ","NA's   :141  ","NA's   :1  ","NA's   :141  ",NA,NA,"NA's   :3  ","NA's   :1  ",NA,NA,"NA's   :141  "
