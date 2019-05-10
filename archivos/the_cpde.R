@@ -1,15 +1,15 @@
 library(tidyverse)
 library(readr)
 library(foreign)
-temporal <- read_csv("/Volumes/DANIEL/tesis_DSI/catalogo_secciones_ine/secciones/ags_sec.csv")
+temporal <- read_csv("/Volumes/DANIEL/tesis_DSI/catalogo_secciones_ine/secciones/ver_sec.csv")
 
 dd<-"/Users/danielsll/mxDistritos/mapasComparados/loc/"
-d <- read.csv(paste(dd,"agsLoc.csv",sep=""), stringsAsFactors = FALSE)
+d <- read.csv(paste(dd,"verLoc.csv",sep=""), stringsAsFactors = FALSE)
+head(d)
 
-
- #mapa de aguascalientes
-#seleccionar las columnas que necesito
-p <- data.frame(d$seccion,d$disloc2016,d$disloc2013,d$edon)
+ #mapa de averscalientes
+#seleccionar las verumnas ver necesito
+p <- data.frame(d$seccion,d$disloc2016,d$disloc2007,d$edon)
 names(p) <- c("SECCION","DIS_NUEVA","DIS_ANT","EDON")
 q <- right_join(p,temporal,by="SECCION")
 q$urbano <- as.numeric(q$TIPO=="URBANO(A)")
@@ -23,7 +23,7 @@ names(t) <- c("EDON","SECCION","DIS_ANT","DIS_NUEVA","URBANO","RURAL","MIXTO")
 
 
 
-N <- max(t$DIS_ANT)
+N <- max(t$DIS_ANT,na.rm = T)
 t$prop_urban <- 0
 for (i in 1:N){
   sel <- which(t$DIS_ANT==i)
@@ -67,9 +67,9 @@ for (i in 1:N){
 }
 
 kk <- "/Volumes/DANIEL/comparaciones/"
-k<-read.csv(paste(kk,"ags.csv",sep=""),stringsAsFactors = F) #van los escenarios
+k<-read.csv(paste(kk,"ver.csv",sep=""),stringsAsFactors = F) #van los escenarios
 
-e <- read.dbf("/Volumes/DANIEL/Tesis/datos_geoelec/datos_geolectorales/eb163727917cbba1eea208541a643e74_geolectorales.dbf")
+e <- read.dbf("/Volumes/DANIEL/Tesis/datos_geoelec/datos_geolectorales-30/f15d337c70078947cfe1b5d6f0ed3f13_geolectorales.dbf")
 head(e) # va la población
 
 ee<-data.frame(e$SECCION,e$POBTOT)
@@ -84,12 +84,12 @@ names(u) <- c("SECCION","ESC1","ESC2","ESC3")
 tt <- right_join(u,w,by="SECCION")
 
 
-write.csv(tt,"/Volumes/DANIEL/tesis_DSI/archivos/ags.csv")
+write.csv(tt,"/Volumes/DANIEL/tesis_DSI/archivos/ver.csv")
 
 
 #calcular DSI secciones SQ-E1, SQ-E3, E1-E3
 SQ<-tt$DIS_ANT#era father
-E1<-tt$ESC1 #era son 
+E1<-tt$ESC1 #era ver 
 E3<-tt$ESC3
 #E3jge<-f$escenario3_jge
 #E3trib<-f$escenario3_tribunal
@@ -98,7 +98,7 @@ N<-max(E1, na.rm=T)
 tt$SQ<-NA
 tt$dsiSQ_E1_sec<-0
 for (i in 1:N){
-  sel.n<-which(E1==i)
+  sel.n<-which(E1==2)
   tmp<-table(SQ[sel.n])
   target<-as.numeric(names(tmp)[tmp==max(tmp)][1])
   tt$SQ[sel.n] <- target
@@ -108,7 +108,7 @@ for (i in 1:N){
 }
 dsi <- tt[duplicated(E1)==FALSE,]
 dsi<-tt[duplicated(SQ)==FALSE,]
-#dsi <- dsi[,c("edon.x","disloc2015","escenario1","dsiSQ_E1")]
+#dsi <- dsi[,c("edon.x","disloc2007","escenario1","dsiSQ_E1")]
 head(dsi)
 
 N<-max(E1, na.rm=T)
@@ -125,12 +125,14 @@ for (i in 1:N){
   pob_f <- sum(tt$POB_TOT[sel.f])
   sel.c <- intersect(sel.n, sel.f)
   pob_c <- sum(tt$POB_TOT[sel.c])
-  tt$dsiSQ_E1_pob[sel.n]<-((pob_c)/(pob_f+pob_n-pob_c)) 
+  tt$dsiSQ_E1_pob[sel.n]<-round(((pob_c)/(pob_f+pob_n-pob_c)),3) 
   }
 
 dsi <- tt[duplicated(E1)==FALSE,]
 dsi<-tt[duplicated(SQ)==FALSE,]
-#dsi <- dsi[,c("edon.x","disloc2015","escenario1","dsiSQ_E1")]
+#dsi <- dsi[,c("edon.x","disloc2007","escenario1","dsiSQ_E1")]
 head(dsi)
 
-write.csv(dsi,"/Volumes/DANIEL/tesis_DSI/archivos/dsi_ags_SQ_E1.csv")
+write.csv(dsi,"/Volumes/DANIEL/tesis_DSI/archivos/dsi_ver_SQ_E1.csv")
+
+
