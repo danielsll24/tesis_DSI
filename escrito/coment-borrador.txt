@@ -13,7 +13,19 @@ Indice General:
 
 - histogramas de dsi: cambia el eje Y para que todos tengan el mismo rango 0-80. El inconveniente es que "achatará" los casos donde la moda esté muy por debajo de 80. Pero tendrá la ventaja de haver visualmente más comparables los distintos gráficos. Recuérdame cómo obtienes la distribución normal que has sobrepuesto---parecería usar la media/varianza de la distribución de DSIs que reporta el histograma y dilo en el texto.
 
-- Haz un reporte con solamente los distritos con DSI >.8 (SQ vs E3). Distingue cuántos distritos de entre ellos tienen alta proporción de bastiones PAN, bastiones PRI, bastiones PRD, o una ausencia de predominio. Estas serían pistas de ingerencia partidista. Repite luego lo mismo SQ vs E1---si las proporciones de bastiones bajaran, las pistas serían más claras.  
+- Haz un reporte con solamente los distritos con DSI >.8 SQ vs E3 ("DSI grande"). Distingue cuántos distritos de entre ellos tienen alta proporción de bastiones PAN, bastiones PRI, bastiones PRD, o una ausencia de predominio. Estas serían pistas de ingerencia partidista. Repite luego lo mismo SQ vs E1---si las proporciones de bastiones bajaran, las pistas serían más claras.
+
+- Otra perspectiva de lo anterior es desde la óptica del distrito padre: cuántos padres con DSI grande lo tienen sólo con E1, sólo con E3 o con ambos. Los que están en ambos corresponden a zonas del estado cuya demografía no deja mucho margen para cambiar: la máquina lo hizo, nadie objetó o pudo objetar. Los que están en E1 pero no en E3 son errores de la máquina que los partidos corrigieron. Los que están sólo en E3 son reconstrucciones exitosas de los partidos.
+(Valdría la pedna quizás que hables de "DSI inverso" o "DSI espejo"---un término que distinga el DSI del hijo con su padre, que analizas, del DSI del padre con su(s) hijo(s).)
 
 - Tabla 2.3 dice E1 v E3 en título pero SQ v E1 en columnas.
+
+- Tabla 2.4: Aunque lo dice el título, no queda claro qué reporta la column "número de distritos". Cuál es el corte para "acercaron a 1", DSI > .8? El partido es aquel que impuso E2? Especifica. Haz también un reporte de todos los estados, independiente de si hubo distritos con alto DSI---qué partido "ganó" E2, cuál ganó E3? Quizás si cambias la tabla 2.5 para que tenga 32 renglones, la identidad partidista de E2, la identidad partidista de E3 (y si intervino un criterio 8).
+
+- En la descripción abre un apartado de malapportionment. A mayor malapportionment en mapa viejo, menor posibilidad de reconstituir distritos padres. Muestra que así ocurre. 
+
+- p. 60. Hipótesis. Entre los actuales caps 1 y 2 sugiero que metas un nuevo capítulo de teoría. Elabora la lógica partidista de la redistritación en un contexto automatizado que describiste en el cap. 1. El nuevo capítulo desarrollará tus hipótesis generales. Por otro lado, sugiero terminar la descripciń y separarla del análisis. Las hips de la p. 60 deberán refrasear las hipótesis generales para operacionalizarlas en términos de tus indicadores (DSI).
+
+
+
 
