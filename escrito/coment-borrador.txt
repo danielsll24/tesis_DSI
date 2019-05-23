@@ -9,6 +9,11 @@ Indice General:
 
 - p. 44 DSI = .025 me parece emasiado bajo. Revisa el mapa físico para verificar que no le hayas asignado el padre equivocado, o para explicar cómo es que sólo comparte 2.5 por ciento de población. Elabora esto en el texto.
 
-- complementa la gráfica 2.1 con cajas y brazos para cada estado por separado (una matriz de gráficas chiquitas).
+- La gráfica 2.1 (cajas y brazos) no aporta nada que no diga la tabla 2.1 Sugiero cambiarla por un matriz de 32 cajas y brazos, una para cada estado por separado.  Sería una matriz de gráficas chiquitas pero muy informativa.
 
+- histogramas de dsi: cambia el eje Y para que todos tengan el mismo rango 0-80. El inconveniente es que "achatará" los casos donde la moda esté muy por debajo de 80. Pero tendrá la ventaja de haver visualmente más comparables los distintos gráficos. Recuérdame cómo obtienes la distribución normal que has sobrepuesto---parecería usar la media/varianza de la distribución de DSIs que reporta el histograma y dilo en el texto.
+
+- Haz un reporte con solamente los distritos con DSI >.8 (SQ vs E3). Distingue cuántos distritos de entre ellos tienen alta proporción de bastiones PAN, bastiones PRI, bastiones PRD, o una ausencia de predominio. Estas serían pistas de ingerencia partidista. Repite luego lo mismo SQ vs E1---si las proporciones de bastiones bajaran, las pistas serían más claras.  
+
+- Tabla 2.3 dice E1 v E3 en título pero SQ v E1 en columnas.
 
