@@ -1,0 +1,19 @@
+Comentarios Daniel
+
+Indice General:
+- El capítulo "Marco teórico" debería llamarse "Marco administrativo" o "Contexto" para que reserves la "teoría" al capítulo/apartado donde desarrolles la lógica política de la redistritación en México.
+
+- p. 38 "Esta sección busca responder a la pregunta: ¿Qué factores intervienen para que los distritos hijos guarden similitud con los distritos padres?" -- falso. Estás arrancando el capítulo del DSI. Lo que buscas es introducir un criterio para cuantificar sistemáticamente el grado de similitud de un mapa y su sustituto. Intuitivamente, esto lo haríamos mirando los dibujos de ambos mapas, con obvias limitaciones. Cox y Katz elaboran el DSI como un sucedáneo estadístico. Prescinden casi del mapa físico (dibujo) para centrarse en empalmes poblacionales (y territorials en la versiń secciones). Este capítulo busca familiarizar al lector con este modo de análisis, discutir sus alcances y limitaciones, describir cómo se ve la redistrittación que estudias desde esta perspectiva. Lo de los factores que explican similitud lo ves en los capítulos de análisis.
+
+- p. 41 Discute en primer lugar el contraste SQ-E3 --- es el que más importa sustancialmente, el que analizan Cox y Katz en su libro. Posteriormente elaboras que tienes datos del proceso mediante el cual se dibujó este mapa, lo que permite intentar reconstruir la lógica de intervención/negociaciń de los partidos en su intento por influir en el proceso de redistritación.
+
+- p. 44 DSI = .025 me parece emasiado bajo. Revisa el mapa físico para verificar que no le hayas asignado el padre equivocado, o para explicar cómo es que sólo comparte 2.5 por ciento de población. Elabora esto en el texto.
+
+- La gráfica 2.1 (cajas y brazos) no aporta nada que no diga la tabla 2.1 Sugiero cambiarla por un matriz de 32 cajas y brazos, una para cada estado por separado.  Sería una matriz de gráficas chiquitas pero muy informativa.
+
+- histogramas de dsi: cambia el eje Y para que todos tengan el mismo rango 0-80. El inconveniente es que "achatará" los casos donde la moda esté muy por debajo de 80. Pero tendrá la ventaja de haver visualmente más comparables los distintos gráficos. Recuérdame cómo obtienes la distribución normal que has sobrepuesto---parecería usar la media/varianza de la distribución de DSIs que reporta el histograma y dilo en el texto.
+
+- Haz un reporte con solamente los distritos con DSI >.8 (SQ vs E3). Distingue cuántos distritos de entre ellos tienen alta proporción de bastiones PAN, bastiones PRI, bastiones PRD, o una ausencia de predominio. Estas serían pistas de ingerencia partidista. Repite luego lo mismo SQ vs E1---si las proporciones de bastiones bajaran, las pistas serían más claras.  
+
+- Tabla 2.3 dice E1 v E3 en título pero SQ v E1 en columnas.
+
