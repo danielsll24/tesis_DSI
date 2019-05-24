@@ -1,0 +1,75 @@
+Call:
+lm(formula = dsi_sec ~ dcrit8 + prop_rural + prop_bastion_pan + 
+    prop_bastion_pri + prop_bastion_prd + PANgob_antes + PANgober_2antes + 
+    PANcong_antes + PANcong_despues + PRIgob_antes + PRIgober_2antes + 
+    PRIcong_antes + PRIcong_despues + PRDgob_antes + dist2017, 
+    data = SQ_E3)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.54393 -0.17609 -0.00403  0.17955  0.55031 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       0.541760   0.173967   3.114 0.001916 ** 
+dcrit8            0.040432   0.028993   1.395 0.163571    
+prop_rural        0.115411   0.031801   3.629 0.000304 ***
+prop_bastion_pan -0.078125   0.169306  -0.461 0.644618    
+prop_bastion_pri -0.063154   0.170047  -0.371 0.710454    
+prop_bastion_prd -0.003183   0.172322  -0.018 0.985267    
+PANgob_antes      0.051796   0.039936   1.297 0.195047    
+PANgober_2antes  -0.069258   0.033013  -2.098 0.036254 *  
+PANcong_antes    -0.068412   0.042063  -1.626 0.104284    
+PANcong_despues   0.112808   0.026553   4.248 2.43e-05 ***
+PRIgob_antes      0.049396   0.034682   1.424 0.154802    
+PRIgober_2antes  -0.118087   0.032481  -3.636 0.000297 ***
+PRIcong_antes     0.070201   0.036192   1.940 0.052802 .  
+PRIcong_despues   0.041805   0.038870   1.076 0.282498    
+PRDgob_antes      0.098618   0.042924   2.297 0.021871 *  
+dist2017          0.019222   0.020794   0.924 0.355565    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2364 on 736 degrees of freedom
+  (8 observations deleted due to missingness)
+Multiple R-squared:   0.17,	Adjusted R-squared:  0.1531 
+F-statistic: 10.05 on 15 and 736 DF,  p-value: < 2.2e-16
+
+
+
+Call:
+lm(formula = dsi_pob ~ dcrit8 + prop_rural + prop_bastion_pan + 
+    prop_bastion_pri + prop_bastion_prd + PANgob_antes + PANgober_2antes + 
+    PANcong_antes + PANcong_despues + PRIgob_antes + PRIgober_2antes + 
+    PRIcong_antes + PRIcong_despues + PRDgob_antes + dist2017, 
+    data = SQ_E3)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5990 -0.1766 -0.0098  0.1865  0.5694 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       0.54872    0.17899   3.066 0.002252 ** 
+dcrit8            0.03224    0.02983   1.081 0.280179    
+prop_rural        0.10582    0.03272   3.234 0.001274 ** 
+prop_bastion_pan -0.07604    0.17420  -0.437 0.662595    
+prop_bastion_pri -0.04556    0.17496  -0.260 0.794642    
+prop_bastion_prd  0.01380    0.17730   0.078 0.937992    
+PANgob_antes      0.03233    0.04109   0.787 0.431647    
+PANgober_2antes  -0.05862    0.03397  -1.726 0.084821 .  
+PANcong_antes    -0.04951    0.04328  -1.144 0.253013    
+PANcong_despues   0.10075    0.02732   3.688 0.000243 ***
+PRIgob_antes      0.04101    0.03568   1.149 0.250883    
+PRIgober_2antes  -0.13661    0.03342  -4.088 4.84e-05 ***
+PRIcong_antes     0.07296    0.03724   1.959 0.050470 .  
+PRIcong_despues   0.06809    0.03999   1.703 0.089062 .  
+PRDgob_antes      0.09364    0.04416   2.120 0.034322 *  
+dist2017          0.01231    0.02139   0.576 0.565101    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2432 on 736 degrees of freedom
+  (8 observations deleted due to missingness)
+Multiple R-squared:  0.1677,	Adjusted R-squared:  0.1507 
+F-statistic: 9.887 on 15 and 736 DF,  p-value: < 2.2e-16

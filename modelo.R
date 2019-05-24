@@ -66,3 +66,9 @@ ee<-"/Volumes/DANIEL/comparaciones/"
 e<-read.csv(paste(ee,"tla.csv",sep=""),stringsAsFactors = F)
 head(e)
 tail(e)
+
+
+reg1<-lm(dsi_sec~dcrit8+prop_rural+
+          prop_bastion_pan+prop_bastion_pri+
+           PRIgober_2antes+PRIcong_antes+PANcong_antes+PANcong_despues+Morenacong_despues+
+          dist2015,SQ_E3)
