@@ -26,6 +26,17 @@ Indice General:
 
 - p. 60. Hipótesis. Entre los actuales caps 1 y 2 sugiero que metas un nuevo capítulo de teoría. Elabora la lógica partidista de la redistritación en un contexto automatizado que describiste en el cap. 1. El nuevo capítulo desarrollará tus hipótesis generales. Por otro lado, sugiero terminar la descripciń y separarla del análisis. Las hips de la p. 60 deberán refrasear las hipótesis generales para operacionalizarlas en términos de tus indicadores (DSI).
 
+- Elabora la lógica de las hipótesis. La 1 se desprende de la importancia del gobierno municipal y de los partidos locales en las poblaciones menos pobladas---pregúntale a Federico por alguna referencia. La 2 debería tener muchos corolarios---depende del partido que gana el E2, de quién predomina en el estado, de la geografía de los bastiones... La 3 tiene una dimensión de cómo negocian/intercambian estados los otros partidos.
 
+- la correlación urb/rural con DSI va en la dirección esperda pero es sumamente tenue. La pregunta es si se logra acentuar cuando incluyas más controles.
+
+- Tabla 2.6
+  - hay asimetría en las v.i, p.ej. falta prop_bastion_PRD, o aparece gob_2_antes pero no el actual etc.
+  - controla el partido que ganó E2---dummies e2_pan, e2_pri, e2_prd (excluye e2_otro). el criterio 8 complica esto, prueba codificar las nuevas dummies en cero todas cuando crit_8 =1 o todas en uno cuando crit_8=1.
+  - las variables cong_ no me parecen atractivas, sácalas.
+  - quizás haya una interacción bastión*e2_. Prueba multiplicar bastion_pan*e2_pan y bastion_pan*(1-e2_pan) e inclúyelas ambas; haz lo mismo para pri y prd. El resultado serán 6 variables de bastión en el modelo. Quizás así se obtenga un efecto positivo de bastiones cuando el partido gana el e2, pero negativo si lo pierde.
+  - controla malapportionment del distrito padre. 
+
+Cuando ajustes estos modelos pasamos al último capítulo. 
 
 
